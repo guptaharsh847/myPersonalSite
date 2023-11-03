@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bhajan and Kirtan</title>
+    <link rel="stylesheet" href="css/music.css" />
+  </head>
+  <body>
+    
+    <div class="player">
+      <ul>
+        <li class="cover">
+          <img id="image" src="images/shi ram.png" />
+        </li>
+        <li class="info">
+          <h1>Jai Shri ram</h1>
+          <h2>Click on the below links to play</h2>
+        </li>
+        <li>
+          <div class="audio-player">
+            <audio id="audio" controls>
+              <source src="images/shi ram.mp3" type="audio/mpeg">
+            </audio>
+            </div>
+
+        </li>
+      </ul>
+    </div>
+    <div class="musiclist">
+    <ul class="playlist">
+    <li><a class="song" href="images/shi ram.mp3" >1. Balaji Acha Lage se   </a>
+        <a class="photo" href="images/shi ram.png" ></a></li>
+    <li><a class="song" href="images/lnsm1.mp3">2. Mahamantra Kirtan      Loknath Swami Maharaja</a>
+      <a class="photo" href="images/lnsm1.jpg" ></a></li>
+    <li><a class="song" href="images/damodar.mp3">3. DamodarAstakam         Loknath Swami Maharaja</a>
+      <a class="photo" href="images/damodar.jpg" ></a></li>
+    <li><a class="song" href="images/lnsm2.mp3">4. Kirtan        Loknath Swami Maharaja</a>
+      <a class="photo" href="images/lnsm2.jpg" ></a></li>
+    <li><a class="song" href="images/lnsm1.mp3">5. Kirtan        Loknath Swami Maharaja</a>
+      <a class="photo" href="images/lnsm3.jpg" ></a></li>
+    </li>
+    </ul>
+  </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"
+      integrity="sha512-wC/cunGGDjXSl9OHUH0RuqSyW4YNLlsPwhcLxwWW1CR4OeC2E1xpcdZz2DeQkEmums41laI+eGMw95IJ15SS3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      VanillaTilt.init(document.querySelector(".player"), {
+        max: 25,
+        speed: 400,
+        glance: true,
+      });
+     
+      
+    </script>
+    <script src="music.js"></script>
+  </body>
+</html>
